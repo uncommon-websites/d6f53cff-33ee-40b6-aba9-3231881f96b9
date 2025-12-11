@@ -3,125 +3,164 @@
 </script>
 
 <div class="space-y-32 pb-32">
-  <!-- Grid Section -->
-  <section class="max-w-7xl mx-auto px-6 grid grid-cols-1 md:grid-cols-2 gap-16 items-center">
+  <!-- Transaction Structuring Section -->
+  <section id="services" class="max-w-7xl mx-auto px-6 grid grid-cols-1 md:grid-cols-2 gap-16 items-center">
     <div>
-      <h3 class="text-4xl font-medium mb-6">Grid</h3>
+      <h3 class="text-4xl font-medium mb-6">Transaction Structuring</h3>
       <p class="text-xl text-gray-600 mb-8 leading-relaxed">
-        <strong class="text-black">Commands for money.</strong> One API/SDK to send, receive, and settle value globally—fiat, stablecoins, or bitcoin. Always real-time, always low cost.
+        <strong class="text-black">Expert deal architecture.</strong> We structure complex commercial real estate transactions to optimize outcomes for institutional investors, ensuring regulatory compliance and risk mitigation.
       </p>
       <div class="flex flex-col gap-2">
-        <a href="#" class="group inline-flex items-center text-black font-medium hover:opacity-70 transition-opacity">
-          Learn more 
+        <a href="#contact" class="group inline-flex items-center text-black font-medium hover:opacity-70 transition-opacity">
+          Discuss Your Deal
           <span class="ml-1 group-hover:translate-x-1 transition-transform">→</span>
         </a>
-        <a href="#" class="text-sm text-gray-400 hover:text-black transition-colors">View docs</a>
       </div>
     </div>
     <div class="bg-gray-50 rounded-3xl p-12 flex items-center justify-center min-h-[400px]">
-      <!-- Grid Visualization -->
+      <!-- Deal Flow Visualization -->
       <div class="relative w-full max-w-md">
-        <div class="flex justify-between items-center">
-          <!-- Central Hub -->
-          <div class="w-16 h-16 bg-black rounded-lg flex items-center justify-center relative z-10">
-            <svg width="32" height="32" viewBox="0 0 24 24" fill="white"><path d="M3 3h7v7H3V3zm11 0h7v7h-7V3zm0 11h7v7h-7v-7zM3 14h7v7H3v-7z"/></svg>
+        <div class="flex flex-col gap-6">
+          <!-- Step 1 -->
+          <div class="flex items-center gap-4">
+            <div class="w-12 h-12 bg-primary-600 rounded-lg flex items-center justify-center text-white font-bold shrink-0">1</div>
+            <div>
+              <div class="text-sm font-medium text-black">Deal Analysis</div>
+              <div class="text-xs text-gray-500">Market assessment & feasibility</div>
+            </div>
           </div>
-          
-          <!-- Endpoints -->
-          <div class="flex flex-col gap-3">
-            {#each ['Send', 'Receive', 'Convert', 'Hold', 'Ramp', 'Program', 'Identity'] as item, i}
-              <div class="flex items-center gap-4">
-                <div class="w-24 h-[1px] bg-gradient-to-r from-black/20 to-transparent transform rotate-180 origin-left"></div>
-                <div class="flex items-center gap-2">
-                  <div class="w-3 h-3 rounded-full" style="background-color: hsl({i * 50}, 70%, 50%)"></div>
-                  <span class="text-xs font-medium text-gray-600">{item}</span>
-                </div>
-              </div>
-            {/each}
+          <!-- Arrow -->
+          <div class="ml-6 w-0.5 h-6 bg-gray-300"></div>
+          <!-- Step 2 -->
+          <div class="flex items-center gap-4">
+            <div class="w-12 h-12 bg-primary-600 rounded-lg flex items-center justify-center text-white font-bold shrink-0">2</div>
+            <div>
+              <div class="text-sm font-medium text-black">Structure Design</div>
+              <div class="text-xs text-gray-500">Optimal transaction framework</div>
+            </div>
+          </div>
+          <!-- Arrow -->
+          <div class="ml-6 w-0.5 h-6 bg-gray-300"></div>
+          <!-- Step 3 -->
+          <div class="flex items-center gap-4">
+            <div class="w-12 h-12 bg-primary-600 rounded-lg flex items-center justify-center text-white font-bold shrink-0">3</div>
+            <div>
+              <div class="text-sm font-medium text-black">Partner Matching</div>
+              <div class="text-xs text-gray-500">Connect with financing sources</div>
+            </div>
+          </div>
+          <!-- Arrow -->
+          <div class="ml-6 w-0.5 h-6 bg-gray-300"></div>
+          <!-- Step 4 -->
+          <div class="flex items-center gap-4">
+            <div class="w-12 h-12 bg-black rounded-lg flex items-center justify-center text-white shrink-0">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
+              </svg>
+            </div>
+            <div>
+              <div class="text-sm font-medium text-black">Deal Execution</div>
+              <div class="text-xs text-gray-500">Close with confidence</div>
+            </div>
           </div>
         </div>
-        <!-- Connecting lines (simplified) -->
-        <svg class="absolute inset-0 w-full h-full pointer-events-none" style="z-index: 0;">
-          <defs>
-            <linearGradient id="lineGradient" x1="0%" y1="0%" x2="100%" y2="0%">
-              <stop offset="0%" stop-color="#000" stop-opacity="0.1" />
-              <stop offset="100%" stop-color="#000" stop-opacity="0" />
-            </linearGradient>
-          </defs>
-          <!-- Curved lines would go here, but using straight CSS lines above for simplicity -->
-        </svg>
       </div>
     </div>
   </section>
 
-  <!-- Connect Section -->
+  <!-- Financing Network Section -->
   <section class="max-w-7xl mx-auto px-6 grid grid-cols-1 md:grid-cols-2 gap-16 items-center">
     <div>
-      <h3 class="text-4xl font-medium mb-6">Connect</h3>
+      <h3 class="text-4xl font-medium mb-6">Financing Network</h3>
       <p class="text-xl text-gray-600 mb-8 leading-relaxed">
-        <strong class="text-black">Enterprise-grade Bitcoin.</strong> Lightspark handles node management, key management, liquidity, channel balancing, and routing—so your team can focus on product development and growth.
+        <strong class="text-black">Institutional connections.</strong> Access our extensive network of financing partners across Germany. We connect you with the right capital sources for your commercial real estate transactions.
       </p>
       <div class="flex flex-col gap-2">
-        <a href="#" class="group inline-flex items-center text-black font-medium hover:opacity-70 transition-opacity">
-          Learn more 
+        <a href="#contact" class="group inline-flex items-center text-black font-medium hover:opacity-70 transition-opacity">
+          Explore Financing Options
           <span class="ml-1 group-hover:translate-x-1 transition-transform">→</span>
         </a>
-        <a href="#" class="text-sm text-gray-400 hover:text-black transition-colors">View docs</a>
       </div>
     </div>
-    <div class="bg-[#E8F5E9] rounded-3xl overflow-hidden min-h-[400px] relative">
-      <div class="absolute inset-0 p-8 font-mono text-xs leading-none text-[#4CAF50] opacity-50 break-all overflow-hidden select-none">
-        {Array(2000).fill(0).map(() => Math.random().toString(36).substring(2, 3)).join('')}
+    <div class="bg-primary-50 rounded-3xl overflow-hidden min-h-[400px] relative p-8">
+      <div class="relative h-full flex flex-col justify-center">
+        <!-- Network Visualization -->
+        <div class="space-y-4">
+          <div class="flex items-center gap-3 p-4 bg-white rounded-xl shadow-sm">
+            <div class="w-10 h-10 rounded-full bg-primary-600 flex items-center justify-center text-white font-bold">B</div>
+            <div class="flex-1">
+              <div class="text-sm font-medium">Banks</div>
+              <div class="text-xs text-gray-500">Traditional financing</div>
+            </div>
+          </div>
+          <div class="flex items-center gap-3 p-4 bg-white rounded-xl shadow-sm">
+            <div class="w-10 h-10 rounded-full bg-primary-600 flex items-center justify-center text-white font-bold">I</div>
+            <div class="flex-1">
+              <div class="text-sm font-medium">Institutional Investors</div>
+              <div class="text-xs text-gray-500">Large-scale capital</div>
+            </div>
+          </div>
+          <div class="flex items-center gap-3 p-4 bg-white rounded-xl shadow-sm">
+            <div class="w-10 h-10 rounded-full bg-primary-600 flex items-center justify-center text-white font-bold">F</div>
+            <div class="flex-1">
+              <div class="text-sm font-medium">Family Offices</div>
+              <div class="text-xs text-gray-500">Private wealth</div>
+            </div>
+          </div>
+          <div class="flex items-center gap-3 p-4 bg-white rounded-xl shadow-sm">
+            <div class="w-10 h-10 rounded-full bg-primary-600 flex items-center justify-center text-white font-bold">P</div>
+            <div class="flex-1">
+              <div class="text-sm font-medium">Private Equity</div>
+              <div class="text-xs text-gray-500">Strategic partners</div>
+            </div>
+          </div>
+        </div>
       </div>
-      <div class="absolute inset-0 bg-gradient-to-b from-transparent to-[#E8F5E9]"></div>
     </div>
   </section>
 
-  <!-- Spark Section -->
+  <!-- Market Expertise Section -->
   <section class="max-w-7xl mx-auto px-6 grid grid-cols-1 md:grid-cols-2 gap-16 items-center">
     <div>
-      <h3 class="text-4xl font-medium mb-6">Spark</h3>
+      <h3 class="text-4xl font-medium mb-6">German Market Expertise</h3>
       <p class="text-xl text-gray-600 mb-8 leading-relaxed">
-        <strong class="text-black">A powerful Bitcoin Layer 2.</strong> Move bitcoin and bitcoin-native assets (including stablecoins) instantly, at near-zero cost, while staying fully connected to Bitcoin's infrastructure.
+        <strong class="text-black">Local knowledge, institutional scale.</strong> Deep understanding of German commercial real estate regulations, market dynamics, and institutional requirements. Based in Düsseldorf's financial district.
       </p>
       <div class="flex flex-col gap-2">
-        <a href="#" class="group inline-flex items-center text-black font-medium hover:opacity-70 transition-opacity">
-          Learn more 
+        <a href="#contact" class="group inline-flex items-center text-black font-medium hover:opacity-70 transition-opacity">
+          Learn About Our Approach
           <span class="ml-1 group-hover:translate-x-1 transition-transform">→</span>
         </a>
-        <a href="#" class="text-sm text-gray-400 hover:text-black transition-colors">View docs</a>
       </div>
     </div>
-    <div class="bg-black rounded-3xl p-12 flex items-center justify-center min-h-[400px]">
-      <!-- Phone Mockup -->
-      <div class="relative w-64 h-[500px] bg-gray-900 rounded-[3rem] border-8 border-gray-800 shadow-2xl overflow-hidden">
-        <!-- Screen Content -->
-        <div class="absolute inset-0 bg-black p-4 text-white">
-          <div class="flex justify-between items-center mb-6 pt-2">
-            <span class="text-xs font-medium">Wallet</span>
-            <div class="w-6 h-6 rounded-full bg-gray-700"></div>
+    <div class="bg-gray-900 rounded-3xl p-8 md:p-12 flex items-center justify-center min-h-[400px]">
+      <!-- Germany Map Visualization -->
+      <div class="relative w-full text-white">
+        <div class="space-y-6">
+          <!-- Market Stats -->
+          <div class="border-l-4 border-primary-500 pl-4">
+            <div class="text-3xl font-bold mb-1">€2 Trillion</div>
+            <div class="text-sm text-gray-400">Total German Real Estate Market</div>
           </div>
-          <div class="mb-8">
-            <div class="text-2xl font-bold">$12,450.00</div>
-            <div class="text-xs text-green-400">+2.4% today</div>
+          
+          <div class="border-l-4 border-primary-500 pl-4">
+            <div class="text-3xl font-bold mb-1">50+</div>
+            <div class="text-sm text-gray-400">Target Deal Pipeline</div>
           </div>
-          <div class="space-y-3">
-             <div class="bg-gray-800/50 p-3 rounded-xl flex items-center gap-3">
-               <div class="w-8 h-8 rounded-full bg-orange-500"></div>
-               <div class="flex-1">
-                 <div class="text-xs font-medium">Bitcoin</div>
-                 <div class="text-[10px] text-gray-400">0.45 BTC</div>
-               </div>
-               <div class="text-xs">$12,300</div>
-             </div>
-             <div class="bg-gray-800/50 p-3 rounded-xl flex items-center gap-3">
-               <div class="w-8 h-8 rounded-full bg-blue-500"></div>
-               <div class="flex-1">
-                 <div class="text-xs font-medium">USD Coin</div>
-                 <div class="text-[10px] text-gray-400">150 USDC</div>
-               </div>
-               <div class="text-xs">$150.00</div>
-             </div>
+          
+          <div class="border-l-4 border-primary-500 pl-4">
+            <div class="text-3xl font-bold mb-1">Düsseldorf</div>
+            <div class="text-sm text-gray-400">Strategic Location</div>
+          </div>
+
+          <!-- Key Markets -->
+          <div class="pt-6 border-t border-gray-700">
+            <div class="text-xs text-gray-500 mb-3 uppercase tracking-wider">Key Markets</div>
+            <div class="flex flex-wrap gap-2">
+              {#each ['Berlin', 'Munich', 'Frankfurt', 'Hamburg', 'Düsseldorf', 'Cologne', 'Stuttgart'] as city}
+                <span class="px-3 py-1 bg-gray-800 rounded-full text-xs">{city}</span>
+              {/each}
+            </div>
           </div>
         </div>
       </div>
